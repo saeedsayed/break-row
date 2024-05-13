@@ -1,0 +1,39 @@
+.mainButton {
+  background-color: var(--main-color);
+  border: var(--main-color) solid 1px;
+  border-radius: 50px;
+  padding: 3px 14px;
+  transition: 0.3s;
+  color: #fff;
+  &:has(a) {
+    padding: 0;
+    & a {
+      padding: 3px 14px;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+    }
+    &:active a{
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    background-color: #ffffff56;
+    border-color: #000;
+    color: #000;
+    & a {
+      color: #000;
+    }
+  }
+  &:active {
+    outline: none;
+    background-color: var(--main-color);
+    color: #fff;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+  }
+}

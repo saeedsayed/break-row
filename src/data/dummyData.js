@@ -1,3 +1,4 @@
+// assets
 import bannerImageOne from '../assets/images/banner-img-1.webp'
 import bannerImageTwo from '../assets/images/banner-img-2.webp'
 import bannerImageThree from '../assets/images/banner-img-3.webp'
@@ -5,11 +6,11 @@ import blogImageOne from "../assets/images/blog-img-1.jpg"
 import blogImageTwo from "../assets/images/blog-img-1.jpg"
 import blogImageThree from "../assets/images/blog-img-1.jpg"
 import blogImageFour from "../assets/images/blog-img-1.jpg"
-import { MdOutlineDeveloperMode } from "react-icons/md";
-import { FaCode } from "react-icons/fa";
+// icons
+import { MdOutlineDeveloperMode, MdOutlineDesignServices } from "react-icons/md";
+import { FaCode, FaHandHoldingMedical, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { CiServer } from "react-icons/ci";
-import { FaHandHoldingMedical } from "react-icons/fa";
-import { MdOutlineDesignServices } from "react-icons/md";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const PAGES_LINKS = [
     {
@@ -31,6 +32,27 @@ export const PAGES_LINKS = [
     {
         name: 'اتصل بنا',
         path: '/contact-us',
+    }
+]
+
+export const SOCIAL_MEDIA_LINKS = [
+    {
+        id: 1,
+        name: 'Facebook',
+        path: 'https://www.facebook.com/',
+        avatar: FaFacebook
+    },
+    {
+        id: 2,
+        name: 'Linkedin',
+        path: 'https://www.linkedin.com/',
+        avatar: FaLinkedin
+    },
+    {
+        id: 3,
+        name: 'Twitter',
+        path: 'https://www.twitter.com/',
+        avatar: FaSquareXTwitter
     }
 ]
 
@@ -89,22 +111,60 @@ export const SERVICES = [
 export const BLOGS = [
     {
         id: 1,
-        title: "التوجيه الاستراتيجي المطلوب لملا��مة التكنولوجيا مع أهداف عملك وتحقيق أقصى كفاءة ممكنة",
+        title: "Creating Smart Apps: A Journey into Machine Learning and Artificial Intelligence",
         image: blogImageOne,
     },
     {
         id: 2,
-        title: "التوجيه الاستراتيجي المطلوب لملا��مة التكنولوجيا مع أهداف عملك وتحقيق أقصى كفاءة ممكنة",
+        title: "Common mistakes to avoid while developing React native apps",
         image: blogImageTwo,
     },
     {
         id: 3,
-        title: "التوجيه الاستراتيجي المطلوب لملا��مة التكنولوجيا مع أهداف عملك وتحقيق أقصى كفاءة ممكنة",
+        title: "How is AR and VR technology supporting businesses in 2023",
         image: blogImageThree,
     },
     {
         id: 4,
-        title: "التوجيه الاستراتيجي المطلوب لملا��مة التكنولوجيا مع أهداف عملك وتحقيق أقصى كفاءة ممكنة",
+        title: "Power of AI and ML for Transforming Mobile App Development ",
         image: blogImageFour,
     },
+]
+
+export const TESTIMONIAL = [
+    {
+        id: 1,
+        name: "محمد",
+        description: `طوال المشروع، كان أعضاء الفريق في "break row" متعاونين ومتواصلين للغاية. لقد كانوا دائمًا على استعداد للاستماع إلى أفكاري وتعليقاتي، وكانوا دائمًا منفتحين على الاقتراحات الجديدة. لقد تأثرت كثيرًا بقدرتهم على العمل معًا كفريق واحد، وأنا راضٍ جدًا عن الشركة.`,
+        image: "https://randomuser.me/api/portraits/men/1.jpg",
+        company: "BreakRow",
+    },
+    {
+        id: 2,
+        name: "سلمان ناصر",
+        description: `لقد عملت مع أكثر من ٢٠ شركة، وأثبتت "break row" أنها واحدة من أفضل الشركات. قدم الفريق حلًا ينفذ جميع متطلباتي بدقة. أقدر كل المساعدة التي قدمها لي الفريق. أود بالتأكيد أن أوصي بـ "كود هايف" لتحويل مسار عملك.`,
+        image: 'https://randomuser.me/api/portraits/men/2.jpg',
+        company: "BreakRow",
+    },
+    {
+        id: 3,
+        name: "سلمان ناصر",
+        description: `لقد عملت مع أكثر من ٢٠ شركة، وأثبتت "break row" أنها واحدة من أفضل الشركات. قدم الفريق حلًا ينفذ جميع متطلباتي بدقة. أقدر كل المساعدة التي قدمها لي الفريق. أود بالتأكيد أن أوصي بـ "كود هايف" لتحويل مسار عملك.`,
+        image: 'https://randomuser.me/api/portraits/men/5.jpg',
+        company: "BreakRow",
+    },
+    {
+        id: 4,
+        name: "سلمان ناصر",
+        description: `لقد عملت مع أكثر من ٢٠ شركة، وأثبتت "break row" أنها واحدة من أفضل الشركات. قدم الفريق حلًا ينفذ جميع متطلباتي بدقة. أقدر كل المساعدة التي قدمها لي الفريق. أود بالتأكيد أن أوصي بـ "كود هايف" لتحويل مسار عملك.`,
+        image: 'https://randomuser.me/api/portraits/men/4.jpg',
+        company: "BreakRow",
+    },
+    {
+        id: 5,
+        name: "راشد حسين",
+        description: `لقد عملت مع أكثر من ٢٠ شركة، وأثبتت "break row" أنها واحدة من أفضل الشركات. قدم الفريق حلًا ينفذ جميع متطلباتي بدقة. أقدر كل المساعدة التي قدمها لي الفريق. أود بالتأكيد أن أوصي بـ "كود هايف" لتحويل مسار عملك.`,
+        image: 'https://randomuser.me/api/portraits/men/3.jpg',
+        company: "BreakRow",
+    }
 ]

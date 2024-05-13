@@ -18,7 +18,7 @@ const Banner = () => {
       <Container className="h-100">
         <Swiper
           modules={[Pagination, Autoplay, EffectFade]}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
           fadeEffect={{ crossFade: true }}
           spaceBetween={50}
           slidesPerView={1}

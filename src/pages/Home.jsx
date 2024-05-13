@@ -3,6 +3,7 @@ import Banner from "../components/homeComponents/Banner";
 import WhyUs from "../components/homeComponents/WhyUs";
 import OurServices from "../components/homeComponents/OurServices";
 import OurBlog from "../components/homeComponents/OurBlog";
+import Testimonial from "../components/common/Testimonial";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <WhyUs />
       <OurServices />
       <OurBlog />
+      <Testimonial />
     </>
   );
 };

@@ -1,4 +1,4 @@
-const delay = 0.5
+const delay = 0
 
 const duration = 1
 

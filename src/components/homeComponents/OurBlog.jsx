@@ -8,33 +8,37 @@ import { BLOGS } from "../../data/dummyData";
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ image, title }) => (
-  <Col sm={6}>
+  <Col md={6}>
+    <FadeAnimate dir={'ltr'}>
     <Card className="shadow rounded-4">
       <CardBody className="d-flex">
-        <div>
-          <h5 className="mt-3 h6">{title}</h5>
+        <div  className="w-100 ps-3">
+          <h5 className="mt-3 h6 text-handler-2" dir="ltr">{title}</h5>
           <Link className="text-warning">اقرأ اكثر</Link>
         </div>
-        <img src={image} alt={title} className="rounded-5 me-3 w-25" />
+        <div style={{width:'50%'}}>
+        <img src={image} alt={title} className="rounded-3 h-100" />
+        </div>
       </CardBody>
     </Card>
+    </FadeAnimate>
   </Col>
 );
 
 const OurBlog = () => {
   return (
-    <section>
+    <section className="pb-5">
       <Container>
         <SectionTitle smTitle={"حقق المكاسب معنا"} bgTitle={"مدونتنا"} />
-        <Row className="mb-5">
-          <Col lg={4}>
+        <Row className="mb-5 gy-3">
+          <Col lg={3}>
             <FadeAnimate dir={"rtl"} className="h-100">
-              <div className="border h-100 rounded-4">
-                <img src={image} alt="" />
+              <div className="h-100 rounded-4 overflow-hidden">
+                <img src={image} alt="" className="w-100 h-100"/>
               </div>
             </FadeAnimate>
           </Col>
-          <Col lg={8}>
+          <Col lg={9}>
             <Row className="gy-3">
               {BLOGS.map(({ id, title, image }) => (
                 <BlogCard key={id} image={image} title={title} />

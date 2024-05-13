@@ -1,7 +1,9 @@
-:root{
+:root {
   --main-color: #0652e9;
-  --secondary-color:#62e1e9;
+  --secondary-color: #62e1e9;
   --section-bg-color: #f9f9f9;
+  --bg-dark:#191919;
+  --whatsapp-bg-color: #25d366;
 }
 
 * {
@@ -27,10 +29,32 @@ a {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
-  object-fit: contain;
+  max-height: 100%;
+  object-fit: cover;
 }
 
-.bg-section{
+.bg-section {
   background-color: var(--section-bg-color);
+}
+
+.text-handler-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-handler-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-handler-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

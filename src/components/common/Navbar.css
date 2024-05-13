@@ -10,7 +10,7 @@
 }
 
 .header.dark-header{
-    background-color: #191919;
+    background-color: var(--bg-dark);
 }
 .header.header-to-top{
     top: -100px;

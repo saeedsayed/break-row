@@ -2,7 +2,7 @@
   --main-color: #0652e9;
   --secondary-color: #62e1e9;
   --section-bg-color: #f9f9f9;
-  --bg-dark:#191919;
+  --bg-dark: #191919;
   --whatsapp-bg-color: #25d366;
 }
 
@@ -33,6 +33,20 @@ img {
   object-fit: cover;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
 .bg-section {
   background-color: var(--section-bg-color);
 }
@@ -44,6 +58,7 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .text-handler-2 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -51,6 +66,7 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .text-handler-3 {
   display: -webkit-box;
   -webkit-box-orient: vertical;

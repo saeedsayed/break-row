@@ -58,17 +58,17 @@ const OurServices = () => {
         <Container>
           <Row className="pt-5 align-items-stretchd gy-3">
             <Col
-              lg={4}
+              md={3}
               className="justify-content-center align-items-center d-flex flex-column"
             >
-              <FadeAnimate dir={"rtl"}>
+              <FadeAnimate dir={"rtl"} className="text-start">
                 <p className="h1 text-primary">60%</p>
                 <p className="h5">ستدخل إلى السوق في وقتٍ أسرع بنسبة</p>
                 <p className="h1 text-primary">40%</p>
                 <p className="h5">تخفيض بنسبة في تكلفة التطوير</p>
               </FadeAnimate>
             </Col>
-            <Col lg={4}>
+            <Col lg={5}>
               <FadeAnimate dir={"btt"}>
                 <div
                   style={{
@@ -76,7 +76,7 @@ const OurServices = () => {
                     height: "467px",
                     width: "360px",
                   }}
-                  className="d-flex align-items-center m-auto justify-content-center flex-column h3 mb-0 px-3 text-center"
+                  className="d-flex align-items-center m-auto justify-content-center flex-column h3 mb-0 px-4 text-center"
                 >
                   أحدث ثورة في رؤيتك من خلال حلول{" "}
                   <span className="text-primary">

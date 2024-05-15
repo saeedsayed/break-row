@@ -1,17 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
 import style from "./whatsappBtn.module.css";
 import { FaWhatsapp } from "react-icons/fa";
-import { createPortal } from "react-dom";
+import { motion } from "framer-motion";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const WhatsappBtn = () => {
+  const target = useRef(null);
   return (
     <>
-      {createPortal(
-        <a href="#" className={style.whatsappBtn}>
+      <OverlayTrigger
+        placement="left"
+        overlay={
+          <Tooltip style={{ direction: "ltr" }}>
+            hello how can we help you?
+          </Tooltip>
+        }
+      >
+        <motion.a
+          variants={{
+            hidden: { x: 100 },
+            visible: { x: 0, transition: { duration: 0 } },
+          }}
+          animate="visible"
+          initial="hidden"
+          href="#"
+          className={`${style.whatsappBtn} shadow-lg`}
+          ref={target}
+        >
           <FaWhatsapp />
-        </a>,
-        document.getElementById("portal")
-      )}
+        </motion.a>
+      </OverlayTrigger>
     </>
   );
 };

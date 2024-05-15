@@ -1,0 +1,32 @@
+.toTopBtn {
+  position: fixed;
+  background-color: var(--secondary-color);
+  width: 30px;
+  height: 30px;
+  bottom: 110px;
+  border: none;
+  right: 30px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:active 
+{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+}

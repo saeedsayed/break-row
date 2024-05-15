@@ -9,9 +9,7 @@ import { ThemeProvider } from "react-bootstrap";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider dir="rtl">
         <App />
-      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

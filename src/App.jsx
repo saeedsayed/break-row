@@ -12,6 +12,7 @@ import MainNavbar from "./components/common/Navbar";
 import { motion } from "framer-motion";
 import Footer from "./components/common/Footer";
 import WhatsappBtn from "./components/common/WhatsappBtn";
+import ToTopBtn from "./components/common/ToTopBtn";
 
 const App = () => {
   return (
@@ -28,7 +29,9 @@ const App = () => {
         </Routes>
         <Footer />
       </motion.div>
+      {/* portals */}
       <WhatsappBtn/>
+      <ToTopBtn/>
     </>
   );
 };

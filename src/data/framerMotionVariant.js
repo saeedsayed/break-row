@@ -1,6 +1,6 @@
 const delay = 0
 
-const duration = 1
+const duration = 1;
 
 export const fadeLeftVariant = {
     hidden: { x: 30, opacity: 0 },

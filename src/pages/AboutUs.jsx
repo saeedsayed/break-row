@@ -1,15 +1,22 @@
-import React from "react";
-import Banner from "../components/aboutUsComponents/Banner";
-import About from "../components/aboutUsComponents/About";
-import OurPrincepel from "../components/aboutUsComponents/OurPrincepel";
+// components
+import {
+  Banner,
+  About,
+  OurPrinciples,
+  WhatDistinguishesUs,
+} from "../components/aboutUsComponents";
+import PageAnimate from "../components/common/animation/PageAnimate";
+import { Testimonial } from "../components/common";
 
 const AboutUs = () => {
   return (
-    <>
+    <PageAnimate>
       <Banner />
       <About />
-      <OurPrincepel />
-    </>
+      <OurPrinciples />
+      <WhatDistinguishesUs />
+      <Testimonial />
+    </PageAnimate>
   );
 };
 

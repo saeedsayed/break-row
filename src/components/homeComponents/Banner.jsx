@@ -2,7 +2,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Pagination, Autoplay } from "swiper/modules";
-import MainBtn from "../common/MainBtn";
+import { MainButton } from "../common";
 import FadeAnimate from "../common/animation/FadeAnimate";
 // data
 import { HOME_BANNER } from "../../data/dummyData";
@@ -38,7 +38,7 @@ const Banner = () => {
                   <FadeAnimate dir={"ltr"}>
                     <h5>الحل الكامل لشركتك</h5>
                     <p className="h1">{banner.description}</p>
-                    <MainBtn to={"/about-us"}>اقرا اكثر</MainBtn>
+                    <MainButton to={"/about-us"}>اقرا اكثر</MainButton>
                   </FadeAnimate>
                 </Col>
               </Row>

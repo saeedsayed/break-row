@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { fadeBottomVariant } from "../../data/framerMotionVariant";
 import FadeAnimate from "../common/animation/FadeAnimate";
 const SectionTitle = ({ smTitle, bgTitle }) => {
   return (

@@ -1,19 +1,23 @@
 import React from "react";
-import Banner from "../components/homeComponents/Banner";
-import WhyUs from "../components/homeComponents/WhyUs";
-import OurServices from "../components/homeComponents/OurServices";
-import OurBlog from "../components/homeComponents/OurBlog";
-import Testimonial from "../components/common/Testimonial";
+import {
+  Banner,
+  WhyUs,
+  OurServices,
+  OurBlog,
+} from "../components/homeComponents";
+import { Testimonial } from "../components/common";
+import { motion } from "framer-motion";
+import PageAnimate from "../components/common/animation/PageAnimate";
 
 const Home = () => {
   return (
-    <>
+    <PageAnimate >
       <Banner />
       <WhyUs />
       <OurServices />
       <OurBlog />
       <Testimonial />
-    </>
+    </PageAnimate>
   );
 };
 

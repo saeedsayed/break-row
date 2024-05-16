@@ -1,0 +1,5 @@
+export { default as Banner } from './Banner'
+export { default as OurBlog } from './OurBlog'
+export { default as OurServices } from './OurServices'
+export { default as WhyUs } from './WhyUs'
+export { default as SectionTitle } from './SectionTitle'

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import style from "./toTopBtn.module.css";
+import style from "./ToTopButton.module.css";
 import { IoIosArrowUp } from "react-icons/io";
 import { motion } from "framer-motion";
 import { fadeTopVariant } from "../../data/framerMotionVariant";
 
-const ToTopBtn = () => {
+const ToTopButton = () => {
   const [visible, setVisible] = useState(false);
 
   const handleToTop = () => {
@@ -38,7 +38,7 @@ const ToTopBtn = () => {
       {visible &&
         createPortal(
           <motion.button
-            className={style.toTopBtn}
+            className={style.toTopButton}
             variants={fadeTopVariant}
             initial="hidden"
             animate="visible"
@@ -52,4 +52,4 @@ const ToTopBtn = () => {
   );
 };
 
-export default ToTopBtn;
+export default ToTopButton;

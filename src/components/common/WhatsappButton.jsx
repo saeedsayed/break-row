@@ -1,14 +1,15 @@
 import React, { useRef } from "react";
-import style from "./whatsappBtn.module.css";
+import style from "./WhatsappButton.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { createPortal } from "react-dom";
 
-const WhatsappBtn = () => {
+const WhatsappButton = () => {
   const target = useRef(null);
   return (
     <>
-      <OverlayTrigger
+    {createPortal(<OverlayTrigger
         placement="left"
         overlay={
           <Tooltip style={{ direction: "ltr" }}>
@@ -24,14 +25,15 @@ const WhatsappBtn = () => {
           animate="visible"
           initial="hidden"
           href="#"
-          className={`${style.whatsappBtn} shadow-lg`}
+          className={`${style.whatsappButton} shadow-lg`}
           ref={target}
         >
           <FaWhatsapp />
         </motion.a>
-      </OverlayTrigger>
+      </OverlayTrigger>, document.getElementById('portal'))}
+      
     </>
   );
 };
 
-export default WhatsappBtn;
+export default WhatsappButton;

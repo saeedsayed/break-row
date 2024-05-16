@@ -1,5 +1,5 @@
 // components
-import SectionTitle from "./SectionTitle";
+import {SectionTitle} from "./";
 import { Col, Container, Row } from "react-bootstrap";
 import FadeAnimate from "../common/animation/FadeAnimate";
 import { Link } from "react-router-dom";

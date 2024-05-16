@@ -1,7 +1,7 @@
 // components
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
-import SectionTitle from "./SectionTitle";
-import MainBtn from "../common/MainBtn";
+import { SectionTitle } from "./";
+import { MainButton } from "../common";
 import FadeAnimate from "../common/animation/FadeAnimate";
 // data
 import { SERVICES } from "../../data/dummyData";
@@ -47,7 +47,7 @@ const OurServices = () => {
                   اكتشف خدماتناالمخصصة والمتطورة والمصممة لتحقيق الكفاءة
                   والشفافية ورضا العملاء.
                 </p>
-                <MainBtn to="/Services">عرض المزيد</MainBtn>
+                <MainButton to="/Services">عرض المزيد</MainButton>
               </CardBody>
             </Card>
           </Col>

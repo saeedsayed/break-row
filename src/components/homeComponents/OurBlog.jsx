@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
 import FadeAnimate from "../common/animation/FadeAnimate";
 import trailer from "../../assets/videos/trailer.mp4";
-import MainButton from "../common/MainBtn";
+import { MainButton } from "../common";
 import { BLOGS } from "../../data/dummyData";
 import { Link } from "react-router-dom";
 

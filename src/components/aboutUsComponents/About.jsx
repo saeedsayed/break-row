@@ -1,8 +1,10 @@
-import React from "react";
+// Components
 import { Col, Container, Row } from "react-bootstrap";
 import FadeAnimate from "../common/animation/FadeAnimate";
+// icons
 import { HiMiniCursorArrowRipple } from "react-icons/hi2";
 import { TfiEye } from "react-icons/tfi";
+// assets
 import whoWeAreImage from "../../assets/images/who-we-are.jpg";
 
 const About = () => {

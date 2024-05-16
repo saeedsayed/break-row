@@ -6,6 +6,9 @@ import blogImageOne from "../assets/images/blog-img-1.jpg"
 import blogImageTwo from "../assets/images/blog-img-1.jpg"
 import blogImageThree from "../assets/images/blog-img-1.jpg"
 import blogImageFour from "../assets/images/blog-img-1.jpg"
+import standoutImageOne from "../assets/images/whats-makes-img-1.jpg"
+import standoutImageTwo from "../assets/images/whats-makes-img-2.jpg"
+import standoutImageThree from "../assets/images/whats-makes-img-3.jpg"
 // icons
 import { MdOutlineDeveloperMode, MdOutlineDesignServices } from "react-icons/md";
 import { FaCode, FaHandHoldingMedical, FaFacebook, FaLinkedin } from "react-icons/fa";
@@ -166,5 +169,23 @@ export const TESTIMONIAL = [
         description: `لقد عملت مع أكثر من ٢٠ شركة، وأثبتت "break row" أنها واحدة من أفضل الشركات. قدم الفريق حلًا ينفذ جميع متطلباتي بدقة. أقدر كل المساعدة التي قدمها لي الفريق. أود بالتأكيد أن أوصي بـ "كود هايف" لتحويل مسار عملك.`,
         image: 'https://randomuser.me/api/portraits/men/3.jpg',
         company: "BreakRow",
+    }
+]
+
+export const STANDOUT = [
+    {
+        title: 'استراتيجيات مثالية',
+        description: 'جمع التحليلات الثاقبة للسوق ومزجها لتحقيق النمو والتميز.',
+        image: standoutImageOne,
+    },
+    {
+        title: "افكار ابداعية",
+        description: 'نحن دائمًا ما نتخطى حدود الابتكار لتحسين منتجاتنا وخدماتنا.',
+        image: standoutImageTwo,
+    },
+    {
+        title: "حلول ابداعية",
+        description: "ومن خلال تسخير قوة الإبداع، فإننا نتفوق في تقديم الحلول التي يتردد صداها بعمق لدى المستهلكين.",
+        image: standoutImageThree,
     }
 ]

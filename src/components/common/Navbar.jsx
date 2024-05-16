@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 // components
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import MainButton from "./MainBtn";
+import MainButton from "./MainButton";
 import { motion } from "framer-motion";
 // data
 import { PAGES_LINKS } from "../../data/dummyData";
@@ -12,7 +12,11 @@ import logoImageLight from "../../assets/images/logo_light.png";
 import logoImageDark from "../../assets/images/logo_dark.png";
 // styles
 import "./Navbar.css";
-import { fadeLeftVariant, fadeRightVariant } from "../../data/framerMotionVariant";
+import {
+  fadeLeftVariant,
+  fadeRightVariant,
+} from "../../data/framerMotionVariant";
+import FadeAnimate from "./animation/FadeAnimate";
 
 const MainNavbar = () => {
   const [logo, setLogo] = useState(logoImageLight);
@@ -59,17 +63,9 @@ const MainNavbar = () => {
         </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "200px" }}
-            navbarScroll
-          >
-            {PAGES_LINKS.map((link) => (
-              <motion.span
-                key={link.path}
-                variants={fadeRightVariant}
-                //   transition={{ duration: 2 }}
-              >
+          <FadeAnimate dir={"ltr"} className="me-auto my-2 my-lg-0 ">
+            <Nav className="align-items-start">
+              {PAGES_LINKS.map((link) => (
                 <NavLink
                   to={link.path}
                   key={link.path}
@@ -78,9 +74,9 @@ const MainNavbar = () => {
                 >
                   {link.name}
                 </NavLink>
-              </motion.span>
-            ))}
-          </Nav>
+              ))}
+            </Nav>
+          </FadeAnimate>
           <MainButton>اتصل الان</MainButton>
           {/* <Form className="d-flex">
             <Form.Control
@@ -90,7 +86,7 @@ const MainNavbar = () => {
             aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
-        </Form> */}
+          </Form> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

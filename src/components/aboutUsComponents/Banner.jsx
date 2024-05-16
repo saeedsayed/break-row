@@ -1,5 +1,5 @@
-import React from "react";
-import MainButton from "../common/MainBtn";
+// components
+import MainButton from "../common/MainButton";
 import FadeAnimate from "../common/animation/FadeAnimate";
 
 const Banner = () => {

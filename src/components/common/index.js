@@ -1,0 +1,6 @@
+export {default as MainButton} from './MainButton'
+export {default as Footer} from './Footer'
+export {default as Navbar} from './Navbar'
+export {default as Testimonial} from './Testimonial'
+export {default as ToTopButton} from './ToTopButton'
+export {default as WhatsappButton} from './WhatsappButton'

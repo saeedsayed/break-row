@@ -52,9 +52,9 @@ const WhatDistinguishesUs = () => {
         <h2 className="py-5 text-center h1">
           لما نحن <span className="text-warning">بارزون</span>؟
         </h2>
-        <Row>
+        <Row className="gy-4">
           {STANDOUT.map(({ title, description, image }) => (
-            <Col md={"4"}>
+            <Col md={"4"} key={crypto.randomUUID()}>
               <FadeAnimate dir="btt" className="h-100">
                 <Card className="shadow rounded-4 h-100">
                   <div className="p-3" style={{ height: "250px" }}>

@@ -11,6 +11,7 @@ import "swiper/css/effect-fade";
 import FadeAnimate from "./animation/FadeAnimate";
 
 const Testimonial = () => {
+  
   return (
     <section className="py-5 bg-section">
       <Swiper

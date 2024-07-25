@@ -1,8 +1,13 @@
 import React from 'react'
+import PageAnimate from '../components/common/animation/PageAnimate'
+import { Banner, WorksList } from "../components/ourWorksComponents"
 
 const OurWorks = () => {
   return (
-    <div>OurWorks</div>
+    <PageAnimate>
+      <Banner />
+      <WorksList />
+    </PageAnimate>
   )
 }
 
